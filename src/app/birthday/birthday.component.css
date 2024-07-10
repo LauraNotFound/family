@@ -85,7 +85,7 @@ p{
     font-style: normal;
     text-align: center;
     align-content: center;
-    background-image: url('imagenes/background.jpg'); 
+    background-image: url('/imagenes/background.jpg'); 
     background-size: cover; 
     background-position: center; 
     position: relative; 
