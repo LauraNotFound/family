@@ -1,4 +1,3 @@
-
 body {
     height: 100%; 
     width: 100%;
@@ -40,14 +39,14 @@ p{
 
 .card{
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
 }
 
 .carousel-item .container {
@@ -66,8 +65,6 @@ p{
     height: 600px;
     object-fit: cover;
     object-position: center;
-    margin: 0;
-    padding: 0;
 }
 
 #heart {
@@ -80,39 +77,40 @@ p{
 }
 
 #msj {
+    margin: 0;
+    padding: 5px;
     font-family: "Acme", sans-serif;
+    font-size:xx-large;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     align-content: center;
-    background-image: url('/imagenes/background.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    position: relative; 
+    /* background-image: url("/imagenes/frog.png"); */
 }
 
-#msj::before {
-    content: "";
-    background-color: rgba(255, 255, 255, 0.5); 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1; 
-}
-
-button{
-    margin: 0;
-    padding: 0;
+.card img{
+    z-index: 0;
 }
 
 #card-msj{
     position: relative;
     z-index: 1;
+    background:none;
+}
+
+#col{
+    padding: 0;
+    margin: 0;
+}
+
+#img-frog{
+    width: 50%;
 }
 
 @media (max-width: 870px) {
+    #msj{
+        font-size:large;
+    }
     .titulo,
     footer {
         font-size: medium;
@@ -124,5 +122,32 @@ button{
 
     footer {
         position: relative;
+    }
+}
+
+@media (max-width: 661px) {
+    #msj{
+        font-size:large;
+    }
+    .titulo{
+        font-size: large;
+    }
+    footer {
+        font-size: medium;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    footer {
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    #img-frog{
+        width: auto;
     }
 }

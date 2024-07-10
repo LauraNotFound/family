@@ -16,7 +16,7 @@
     <main class="fixed-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div id="col" class="col-sm-12 col-md-6">
                     <!-- Aquí va el carrusel de fotos -->
                     <div id="carouselExampleDark" class="carousel carousel-dark slide">
                         <div class="carousel-indicators">
@@ -99,9 +99,10 @@
                     </div>
                 </div>
                 <div id="msj" class="col-sm-12 col-md-6">
-                    <div class="card" id="card-msj">
+                    <div id="card-msj" class="card">
                         <div class="mensaje">
                             {{message}}
+                            <img id="img-frog" src="imagenes/frog.png" alt="frog">
                         </div>
                         <div *ngIf="countdown">
                             {{countdown}}
