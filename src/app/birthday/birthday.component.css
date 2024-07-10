@@ -18,12 +18,6 @@ footer {
     padding: 10px;
     flex: 0 0 auto;
 }
-/* 
-.fixed-bottom {
-    width: 100%;
-    z-index: 1030;
-    bottom: 0;
-} */
 
 .titulo {
     color: #20788391;
@@ -91,10 +85,10 @@ p{
     font-style: normal;
     text-align: center;
     align-content: center;
-    background-image: url('/imagenes/background_message_waiting.jpg'); /* Ruta relativa a la carpeta de assets */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    position: relative; /* Necesario para manejar capas */
+    background-image: url('imagenes/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
 }
 
 #msj::before {

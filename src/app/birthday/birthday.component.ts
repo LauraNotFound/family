@@ -11,7 +11,7 @@ import { interval } from 'rxjs';
 })
 export class BirthdayComponent implements OnInit {
   //Toma un día después del verdadero día del cumpleaños
-  birthday_sandra = new Date('1999-07-11');
+  birthday_sandra = new Date('1999-07-07');
   birthday_jean = new Date('2012-10-23');
   birthday_laura = new Date('1997-05-17');
   birthday_mama = new Date('1975-11-24');
