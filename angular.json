@@ -45,8 +45,7 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "https://github.com/LauraNotFound/family.git"
+              "outputHashing": "all"
             },
             "development": {
               "optimization": false,
