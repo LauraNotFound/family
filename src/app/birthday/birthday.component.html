@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <p class="titulo">Bienvenido a la página de cumpleaños de la Familia Mendoza Morales</p>
+        </div>
+    </header>
+    <main class="fixed-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6" style="margin: 0; padding: 0;">
+                    <!-- Aquí va el carrusel de fotos -->
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="container">
+                                    <img src="imagenes/Foto-Familiar.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Familia</h5>
+                                        <p>Mendoza Morales</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="container">
+                                    <img id="img-mama" src="imagenes/mama.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Mamá</h5>
+                                        <p>Jhenny Aniceta Morales Ramos <br>23/11/1975</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="container">
+                                    <img id="img-papa" src="imagenes/papa.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Papá</h5>
+                                        <p>José Luis Mendoza Gómez <br>30/04/1975</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="container">
+                                    <img src="imagenes/laura.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Laura Cecilia<br>16/05/1997</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="container">
+                                    <img src="imagenes/sandra.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Sandra Katherine<br>06/07/1999</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="imagenes/jean.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>José Alexander Jean<br>22/10/2012</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="msj" class="col-sm-12 col-md-6">
+                    <div class="card" id="card-msj">
+                        <div class="mensaje">
+                            {{message}}
+                        </div>
+                        <div *ngIf="countdown">
+                            {{countdown}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- class="fixed-bottom" -->
+    <footer>
+        <div class="container-fluid">
+            Hecho por LauraNotFound <i id="heart" class="fa-solid fa-heart"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+
+body {
+    height: 100%; 
+    width: 100%;
+}
+
+header {
+    background-color: #e9e9e9;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 auto;
+}
+/* 
+.fixed-bottom {
+    width: 100%;
+    z-index: 1030;
+    bottom: 0;
+} */
+
+.titulo {
+    color: #20788391;
+    font-size: larger;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: none;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+#heart {
+    color: brown;
+}
+
+#img-mama,
+#img-papa {
+    object-position: top;
+}
+
+#msj {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    align-content: center;
+    background-image: url('/imagenes/background_message_waiting.jpg'); /* Ruta relativa a la carpeta de assets */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Necesario para manejar capas */
+}
+
+#msj::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5); 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
+}
+
+button{
+    margin: 0;
+    padding: 0;
+}
+
+#card-msj{
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 870px) {
+    .titulo,
+    footer {
+        font-size: medium;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
